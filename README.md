@@ -4,18 +4,11 @@
   <img src="img/logo.svg" style="width: 50%; height: auto;">
 </p>
 
-[Qilin Chess](https://baike.baidu.com/item/%E9%BA%92%E9%BA%9F%E6%A3%8B/58965173) (麒麟棋) is based on the national intangible cultural heritage project **"Haifeng Qilin Dance"** in Shanwei City. The front view and side view of the Qilin are used to distinguish the `red` and `black` sides. There are two ways to play Qilin chess, `"XiaSanZi"` (下三子) and `"XingJiuGong"` (行九宫).
+[Qilin Chess](https://baike.baidu.com/item/%E9%BA%92%E9%BA%9F%E6%A3%8B/58965173) (麒麟棋) is based on the national intangible cultural heritage project **"Haifeng Qilin Dance"** (海丰麒麟舞) in Shanwei City (汕尾市). The front view and side view of the Qilin are used to distinguish the `red` and `black` sides. There are two ways to play Qilin chess, `"XiaSanZi"` (下三子) and `"XingJiuGong"` (行九宫).
 
-Qilin Chess' XiaSanZi is based on [ChengSan Chess](https://baike.baidu.com/item/%E6%88%90%E4%B8%89%E6%A3%8B/241145?fromModule=lemma_inlink) is based on [LiuZiChong Chess](https://baike.baidu.com/item/%E5%85%AD%E5%AD%90%E5%86%B2%E6%A3%8B/15738197?fromModule=lemma_inlink).
+Qilin Chess' XiaSanZi is based on [ChengSan Chess](https://baike.baidu.com/item/%E6%88%90%E4%B8%89%E6%A3%8B/241145?fromModule=lemma_inlink) (成三棋) is based on [LiuZiChong Chess](https://baike.baidu.com/item/%E5%85%AD%E5%AD%90%E5%86%B2%E6%A3%8B/15738197?fromModule=lemma_inlink) (六子冲棋).
 
 This project is an implementation of Qilin Chess' **XiaSanZi** (下三子) .
-
-## T06_QilinChess_01
-- Bruno Huang (up202207517) - 50%
-- Ricardo Yang (up202208465) - 50%
-
-## Brief description of the tasks each one performed
-We collaborated on the entire game development process, continuously exchanging ideas and feedback to ensure a cohesive and well-rounded implementation.
 
 ## Installation and Execution
 
@@ -173,21 +166,3 @@ Additionally, when implementing the return to menu action, we encountered bugs r
 When tackling the I/O-related functions, we observed that uppercase inputs would cause errors in the program. With the help of ChatGPT, we attempted to convert the inputs to lowercase. However, we discovered that SICStus Prolog did not support the libraries provided (which were for SWI-Prolog). We then asked the AI to manually implement the conversion, but we still encountered issues with uppercase inputs being considered as variables and backtracking with uninstantiated variables. As a result, we decided to treat uppercase inputs as invalid.
 
 Overall, the project successfully implements the core mechanics of Qilin Chess and provides a solid foundation for future enhancements. With further development, the game can be made more robust, user-friendly, and engaging for a wider audience.
-
-### Bibliography
-- [Qilin Chess](https://baike.baidu.com/item/%E9%BA%92%E9%BA%9F%E6%A3%8B/58965173)
-- ChatGPT Queries (Most relevant ones):
-    - How can I make the pieces display on board dynamically?
-    - How can I transitate from the first stage to the second stage of the game?
-    - How can I separate a move like a1a4 to a1 and a4 to check positions separately?
-    - Refactor this code without using if-else-then conditions nor -> ; operators
-    - How to check for lines formed after a move?
-    - Based on player types and current player, how to check if current player is computer or human?
-    - What are the functions that I can use to save and load a game state?
-    - How to show a custom error message instead of prolog error message in case of invalid inputs?
-    - How does this cut and fail here makes the loop work correctly?
-    - This error is shown after I input like ASD. how to handle this?
-    - Help me implement a Press ENTER to continue feature
-    - How can I write the value function value(+GameState, +Player, -Value) so it considers forming a line as the priority, then at the same time it should prevent opponent from forming line
-    - Without changing the logic, help me improve the readability of the code
-    - Why does this happen?
